@@ -3,83 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simply Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">SIMPLY CHOCOLATE</a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">How it’s made?</a></li>
-          <li><a href="">Chocolate is loved</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""><img src="./images/facebook.jpg" alt="facebook" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/instagram.jpg" alt="instagram" /></a>
-          </li>
-          <li>
-            <a href="./images/twitter.jpg"
-              ><img src="./images/twitter.jpg" alt="twitter"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header-section">
+      <div class="container">
+        <!-- LOGO -->
+        <div class="logo-wrapper">
+          <a class="logo" href="./index.html"
+            ><span class="logo-italic">SIMPLY</span>&nbspCHOCOLATE</a
+          >
+          <svg class="logo-icon" width="24" height="24">
+            <use href="./images/icons/symbol-defs.svg#icon-chocolate"></use>
+          </svg>
+        </div>
+        <!-- NAV -->
+        <div class="menu-wrapper">
+          <nav class="nav-menu">
+            <ul class="nav-menu-links">
+              <li><a class="nav-link" href="">Home</a></li>
+              <li><a class="nav-link" href="">How it’s made?</a></li>
+              <li><a class="nav-link" href="">Chocolate is loved</a></li>
+            </ul>
+          </nav>
+          <ul class="menu-networks-list">
+            <li class="social-network-item">
+              <a class="social-network-link" href=""
+                ><svg class="social-icon" width="24" height="24">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network-item">
+              <a class="social-network-link" href="">
+                <svg class="social-icon" width="24" height="24">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network-item">
+              <a class="social-network-link" href="">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Start Page -->
-      <section>
-        <h1 id="home">
-          Treat yourself or a loved one to our finest ingredients for a moment
-          of pure delight!
-        </h1>
-        <ul>
-          <li><button type="button">Buy now</button></li>
-          <li><button type="button">How it’s made</button></li>
-        </ul>
-        <a href="#scroll"
-          >scroll down <img src="./images/facebook.jpg" alt="" />
-        </a>
+      <section class="start-page-section">
+        <div class="container">
+          <div class="start-page">
+            <h1 class="main-caption" id="home">
+              Treat yourself or a loved one to <br />
+              our finest ingredients for a moment of pure delight!
+            </h1>
+            <div class="start-page-line-buttons">
+              <ul class="start-page-buttons">
+                <li class="start-page-button-item">
+                  <button class="start-page-button" type="button">
+                    Buy now
+                  </button>
+                </li>
+                <li class="start-page-button-item">
+                  <button class="start-page-button" type="button">
+                    How it’s made
+                  </button>
+                </li>
+              </ul>
+              <a class="scroll-button" href="#scroll"
+                >scroll down
+                <svg class="scroll-svg" width="22" height="22">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-arrow-down"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Benefits -->
-      <section>
-        <h2 hidden>Benefits</h2>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
-              Crafted with the finest quality cocoa beans and a dedication to
-              perfection, each bite is a decadent experience that simply cannot
-              be matched. Savor the richness and complexity of our Unsurpassed
-              Taste and discover a new level of chocolate bliss.
-            </p>
-          </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
-              Indulge in high-quality chocolate without breaking the bank with
-              Simply Chocolate's selection of affordable treats. Enjoy
-              mouth-watering truffles and velvety chocolate bars without
-              sacrificing taste or quality. Browse our selection and indulge in
-              affordable luxury today.
-            </p>
-          </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
-              We take pride in our own production process, ensuring that every
-              step is carefully crafted to perfection. From selecting the finest
-              ingredients to handcrafting each piece, our attention to detail is
-              evident in every bite.
-            </p>
-          </li>
-        </ul>
+      <section class="benefits-section section">
+        <div class="container">
+          <h2 hidden>Benefits</h2>
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <h3 class="benefits-list-subtitle">Unsurpassed taste</h3>
+              <p class="benefits-list-text">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-list-subtitle">Affordable price</h3>
+              <p class="benefits-list-text">
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
+                mouth-watering truffles and velvety chocolate bars without
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-list-subtitle">Own production</h3>
+              <p class="benefits-list-text">
+                We take pride in our own production process, ensuring that every
+                step is carefully crafted to perfection. From selecting the
+                finest ingredients to handcrafting each piece, our attention to
+                detail is evident in every bite.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Ingridients -->
-      <section>
+      <section class="section">
         <h2>It all adds up to one exceptional taste sensation</h2>
         <ul>
           <li>
@@ -281,37 +343,39 @@
         </ul>
       </section>
       <!-- Top sellers -->
-      <section>
-        <h2>Top sellers</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/top sellers/chocolate with nuts.jpg"
-              alt="chocolate with nuts"
-              weigth="368"
-              height="464"
-            />
-            <h3>CHOCOLATE WITH NUTS</h3>
-          </li>
-          <li>
-            <img
-              src="./images/top sellers/chocolate with fruits.jpg"
-              alt="chocolate with fruits"
-              weigth="368"
-              height="464"
-            />
-            <h3>CHOCOLATE WITH FRUITS</h3>
-          </li>
-          <li>
-            <img
-              src="./images/top sellers/dark chocolate.jpg"
-              alt="dark chocolate"
-              weigth="368"
-              height="464"
-            />
-            <h3>DARK CHOCOLATE</h3>
-          </li>
-        </ul>
+      <section class="section-top">
+        <div class="container">
+          <h2 class="title-top">Top sellers</h2>
+          <ul class="list-top">
+            <li class="item-top">
+              <img
+                src="./images/top sellers/chocolate with nuts.jpg"
+                alt="chocolate with nuts"
+                weigth="368"
+                height="464"
+              />
+              <h3 class="sub-title-top">CHOCOLATE WITH NUTS</h3>
+            </li>
+            <li class="item-top">
+              <img
+                src="./images/top sellers/chocolate with fruits.jpg"
+                alt="chocolate with fruits"
+                weigth="368"
+                height="464"
+              />
+              <h3>CHOCOLATE WITH FRUITS</h3>
+            </li>
+            <li class="item-top">
+              <img
+                src="./images/top sellers/dark chocolate.jpg"
+                alt="dark chocolate"
+                weigth="368"
+                height="464"
+              />
+              <h3>DARK CHOCOLATE</h3>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- reviews -->
       <section>
